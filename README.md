@@ -1,1 +1,1 @@
-# ImageLoad
+Reads image files in any given folder path in stacked form as 4 dimensional data where first dimension corresponds to the samples and remaining for image size and color channel. It can help you put resulting data directly to Deep Learning architecture as training dataset.
