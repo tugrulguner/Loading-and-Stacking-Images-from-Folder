@@ -8,9 +8,9 @@ def imreadandresffold(path, fileextension, sizeh, sizew, operation):
   # operation can take either 'all' or any specific string: use 'all' to take all image files specified with flieextension or use something else to select only certain files
   # satisfying your condition like if you want to select certain names 'person*_bacteria_*' which selects all the files containing person1, person2, person3, ..., etc
   # and including personx_bacteria_... Here as an example, this selects person1_bacteria_1, person2_bacteria_2, person2_bacteria_2am and so on. Only person and bacteria
-  # are fixed here and places with * related to anything else.
+  # are fixed here and places with * related to anything else. It is a typical bash code.
   if operation is 'all':
-    imdata= np.stack([cv2.resize(cv2.imread(file), (sizeh,sizew), interpolation = cv2.INTER_NEAREST) for file in glob.glob(path+'/*.'+ fileextension)])
+    imdata= np.stack([cv2.resize(cv2.imread(file), (sizeh,sizew), interpolation = cv2.INTER_NEAREST) for file in glob.glob(path + '*.' + fileextension)])
   else:
-    imdata= np.stack([cv2.resize(cv2.imread(file), (sizeh,sizew), interpolation = cv2.INTER_NEAREST) for file in glob.glob(path+'/'+ specific + '.' + fileextension)])
+    imdata= np.stack([cv2.resize(cv2.imread(file), (sizeh,sizew), interpolation = cv2.INTER_NEAREST) for file in glob.glob(path + specific + '.' + fileextension)])
   return imdata
