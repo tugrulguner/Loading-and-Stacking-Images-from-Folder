@@ -6,8 +6,8 @@ For example, in training folder, there are 2 folders NORMAL and PNEUMONIA. I rea
 
 Example use:
 
-imdatanorm = imreadandresffold(path, 'jpeg', 128, 128, 'all') *** Reads all jpeg files
-imdatapne_bac = imreadandresffold(path, 'jpeg', 128, 128, 'person\*\_bacteria\_\*') *** Reads bacteria related jpeg files
-imdatapne_vir = imreadandresffold(path, 'jpeg', 128, 128, 'person\*\_virus\_\*') *** Reads virus related jpeg files
+imdatanorm = imreadandresffold(path, 'jpeg', 128, 128, 'all') *** Reads all jpeg files \\
+imdatapne_bac = imreadandresffold(path, 'jpeg', 128, 128, 'person\*\_bacteria\_\*') *** Reads bacteria related jpeg files \\
+imdatapne_vir = imreadandresffold(path, 'jpeg', 128, 128, 'person\*\_virus\_\*') *** Reads virus related jpeg files \\
 
 Resizing the image file reading in folder is essential to be able to stack them. Otherwise, it is not possible to stack them in array format, that's why we have resize option in this function.
