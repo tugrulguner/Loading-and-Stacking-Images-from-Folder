@@ -13,5 +13,5 @@ def imreadandresffold(path, fileextension, sizeh, sizew, operation):
   if operation is 'all':
     imdata= np.stack([cv2.resize(cv2.imread(file), (sizeh,sizew), interpolation = cv2.INTER_NEAREST) for file in glob.glob(path + '*.' + fileextension)])
   else:
-    imdata= np.stack([cv2.resize(cv2.imread(file), (sizeh,sizew), interpolation = cv2.INTER_NEAREST) for file in glob.glob(path + specific + '.' + fileextension)])
+    imdata= np.stack([cv2.resize(cv2.imread(file), (sizeh,sizew), interpolation = cv2.INTER_NEAREST) for file in glob.glob(path + operation + '.' + fileextension)])
   return imdata
