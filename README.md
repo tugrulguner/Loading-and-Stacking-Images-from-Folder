@@ -1,4 +1,4 @@
-Function 'imreadandresffold(path, fileextension, sizeh, sizew, operation)' in 'imageloadandresize.py' above reads image files in any given folder path in stacked form as 4 dimensional data where first dimension corresponds to the total sample and remaining to the image sizes and color channel. It can help you to put resulting data directly into any Deep Learning architecture as training dataset. Images are normalized during the process.
+Function 'imreadandresffold(path, fileextension, sizeh, sizew, operation)' in 'imreadandresffold.py' above reads image files in any given folder path in stacked form as 4 dimensional data where first dimension corresponds to the total sample and remaining to the image sizes and color channel. It can help you to put resulting data directly into any Deep Learning architecture as training dataset. Images are normalized during the process.
 
 I write this function especially to be able to read https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia dataset. 
 
